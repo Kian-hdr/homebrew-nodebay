@@ -48,4 +48,4 @@ Zap does not delete original shelf files, downloads, generated Markdown, or comp
 
 Nodebay is based on [Boring Notch](https://github.com/TheBoredTeam/boring.notch) commit `44dd999f70493da48209c99e9f873c47f2e55c83`. This tap is not affiliated with or endorsed by Apple, Microsoft, Spotify, YouTube, ImageOptim, or other integrated providers.
 
-The public tap will be created only after the exact release and cask receive final approval.
+Release artifacts and cask checksums are published together only after Developer ID signing, Apple notarization, stapling, and installation verification.
