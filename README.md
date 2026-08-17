@@ -6,10 +6,11 @@ Official Homebrew tap for [Nodebay](https://github.com/Kian-hdr/nodebay), the lo
 
 ```bash
 brew tap Kian-hdr/nodebay
+brew trust --cask Kian-hdr/nodebay/nodebay
 brew install --cask nodebay
 ```
 
-Equivalent fully qualified command:
+Homebrew 6 requires the one-time trust command for casks from third-party taps. This trusts only the Nodebay cask. After that, the equivalent fully qualified command is:
 
 ```bash
 brew install --cask Kian-hdr/nodebay/nodebay
