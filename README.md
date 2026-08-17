@@ -15,7 +15,7 @@ Equivalent fully qualified command:
 brew install --cask Kian-hdr/nodebay/nodebay
 ```
 
-The cask supports Apple Silicon and macOS 15 Sequoia or later. It downloads the signed and notarized archive from the matching [Nodebay GitHub release](https://github.com/Kian-hdr/nodebay/releases) and installs exactly one application: `Nodebay.app`.
+The cask supports Apple Silicon and macOS 15 Sequoia or later. Once the first release is published, it will download the signed and notarized archive from the matching [Nodebay GitHub release](https://github.com/Kian-hdr/nodebay/releases) and install exactly one application: `Nodebay.app`.
 
 ## Upgrade
 
