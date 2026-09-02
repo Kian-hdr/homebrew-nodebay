@@ -16,7 +16,7 @@ Homebrew 6 requires the one-time trust command for casks from third-party taps. 
 brew install --cask Kian-hdr/nodebay/nodebay
 ```
 
-The cask supports Apple Silicon and macOS 15 Sequoia or later. Once the first release is published, it will download the signed and notarized archive from the matching [Nodebay GitHub release](https://github.com/Kian-hdr/nodebay/releases) and install exactly one application: `Nodebay.app`.
+The cask supports Apple Silicon and macOS 15 Sequoia or later. It downloads the signed, notarized, and stapled DMG from the matching [Nodebay GitHub release](https://github.com/Kian-hdr/nodebay/releases) and installs exactly one application: `Nodebay.app`. The unmodified yt-dlp and FFmpeg Homebrew formulas are installed as separate companion dependencies for local media downloads and processing.
 
 ## Upgrade
 
