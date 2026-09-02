@@ -18,6 +18,8 @@ brew install --cask Kian-hdr/nodebay/nodebay
 
 The cask supports Apple Silicon and macOS 15 Sequoia or later. It downloads the signed, notarized, and stapled DMG from the matching [Nodebay GitHub release](https://github.com/Kian-hdr/nodebay/releases) and installs exactly one application: `Nodebay.app`. The unmodified yt-dlp and FFmpeg Homebrew formulas are installed as separate companion dependencies for local media downloads and processing.
 
+Nodebay 1.1.0 adds local Quick Notes, native Markdown Quick Look and conservative STL-copy repair, plus improved automatic audio/video selection. ImageOptim and Blender 5.0.1 are optional, separately installed apps, not cask dependencies. See the application's [feature documentation and limitations](https://github.com/Kian-hdr/nodebay#features) and [release verification](https://github.com/Kian-hdr/nodebay/blob/main/docs/release-verification-matrix.md); installation does not establish physical-display or per-site downloader compatibility.
+
 ## Upgrade
 
 ```bash
@@ -37,7 +39,7 @@ To also remove Nodebay preferences and caches:
 brew uninstall --cask --zap nodebay
 ```
 
-Zap does not delete original shelf files, downloads, generated Markdown, or compressed image outputs.
+Zap does not delete original shelf files, downloads, Quick Notes, generated Markdown, repaired STL files, or compressed outputs. It intentionally preserves Nodebay's Application Support storage and backups.
 
 ## Project links
 
