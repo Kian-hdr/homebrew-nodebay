@@ -2,6 +2,13 @@
 
 Official Homebrew tap for [Nodebay](https://github.com/Kian-hdr/nodebay), the local-first utility bay in your Mac's notch.
 
+## Set up with your AI agent
+
+**[Copy the setup prompt into your agent's chat](SETUP-PROMPT.md).** No placeholders
+need editing. Use an agent with access to your Mac; it will check compatibility,
+download and verify the installer, preserve existing settings, and guide any
+permissions or configuration you need to complete yourself.
+
 ## Install
 
 ```bash
