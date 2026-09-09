@@ -25,7 +25,9 @@ brew install --cask Kian-hdr/nodebay/nodebay
 
 The cask supports Apple Silicon and macOS 15 Sequoia or later. It downloads the signed, notarized, and stapled DMG from the matching [Nodebay GitHub release](https://github.com/Kian-hdr/nodebay/releases) and installs exactly one application: `Nodebay.app`. The unmodified yt-dlp and FFmpeg Homebrew formulas are installed as separate companion dependencies for local media downloads and processing.
 
-Nodebay 1.2.0 adds optional Quick Chat with clear API-key setup and text-fitting message bubbles, available media-source tabs, and file-drawer fixes. Quick Chat defaults to Off. OpenAI API billing is separate from a ChatGPT subscription; API keys are stored in macOS Keychain. Codex CLI and Longhaul are optional separate integrations and are not installed by this cask. ImageOptim and Blender 5.0.1 are optional, separately installed apps, not cask dependencies. See the application's [feature documentation and limitations](https://github.com/Kian-hdr/nodebay#features) and [release verification](https://github.com/Kian-hdr/nodebay/blob/main/docs/release-verification-matrix.md); installation does not establish physical-display or per-site downloader compatibility.
+Nodebay 1.2.1 fixes media discovery and helper recovery, untitled active audio, progress/control spacing in the compact notch, and local Spotify equalizer routing. It also corrects the bundled converter's macOS 15 compatibility and preserves image compression from read-only folders. EQ needs System Audio Recording permission separately on each Mac; app-specific media controls can also require Automation permission. Spotify Connect audio playing on another device is outside local EQ. See [equalizer setup and limitations](https://github.com/Kian-hdr/nodebay/blob/main/docs/features/equalizer.md).
+
+Optional Quick Chat includes clear API-key setup and text-fitting message bubbles, and defaults to Off. OpenAI API billing is separate from a ChatGPT subscription; API keys are stored in macOS Keychain. Codex CLI and Longhaul are optional separate integrations and are not installed by this cask. ImageOptim and Blender 5.0.1 are optional, separately installed apps, not cask dependencies. See the application's [feature documentation and limitations](https://github.com/Kian-hdr/nodebay#features) and [release verification](https://github.com/Kian-hdr/nodebay/blob/main/docs/release-verification-matrix.md); installation does not establish physical-display or per-site downloader compatibility.
 
 For guided, data-preserving installation and optional AI setup, use the
 [setup prompt](https://github.com/Kian-hdr/nodebay/blob/main/SETUP-PROMPT.md).
@@ -34,8 +36,10 @@ For guided, data-preserving installation and optional AI setup, use the
 
 ```bash
 brew update
-brew upgrade --cask nodebay
+brew upgrade --cask --greedy Kian-hdr/nodebay/nodebay
 ```
+
+Nodebay 1.2.1 includes signed in-app updates from its own GitHub feed. Open About Nodebay to check manually or change automatic checks and downloads. Older 1.2.0 installations need the one-time Homebrew upgrade above to gain this feature. The cask declares `auto_updates true`, so `--greedy` includes it when explicitly updating through Homebrew. Preserve a newer app already installed by the in-app updater; never downgrade it to older cask metadata.
 
 ## Uninstall
 
