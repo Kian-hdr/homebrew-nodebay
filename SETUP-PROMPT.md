@@ -26,9 +26,8 @@ let me finish active work before quitting it for an update.
 
 2. Choose and verify the official installer.
 Read https://github.com/Kian-hdr/nodebay/releases/latest and the current README.
-Prefer the official Homebrew cask if Homebrew is already installed and the
-cask and its release asset are available. Otherwise use the verified release
-download without installing Homebrew just for this app.
+Prefer the official release download. If this app is already managed by
+Homebrew, use that existing installation method to avoid duplicate installs.
 Resolve the actual compatible asset from a published stable release, not GitHub's
 automatic source ZIP. Record the tag, exact download URL, and published SHA-256.
 Download to a temporary directory with HTTP failures treated as errors. Verify
@@ -60,6 +59,16 @@ to this specific cask. Do not trust an entire tap, suppress quarantine, install
 unrelated upgrades, or run uninstall --zap. If the cask is absent or its URL fails,
 use the verified release route above or report the source-build choice if offered.
 
+Before using in-app updates, confirm the installed release includes them. Nodebay
+1.2.0 and older cannot activate an updater remotely and need one final verified
+manual or Homebrew upgrade. For this migration, use a targeted
+brew upgrade --cask --greedy Kian-hdr/nodebay/nodebay after brew update, because
+the current cask declares auto_updates true. Do not downgrade a newer app already
+installed by Sparkle. For Nodebay 1.2.1 and later, open About Nodebay and Check for
+Updates. Explain the automatic checks/downloads choice and preserve my existing
+explicit preference. Wait for downloads, conversions and drafts to finish before
+an update restart. Do not use --zap or delete Keychain items during updates.
+
 4. Complete setup and verify actual use.
 Open the installed app through Finder or open. Verify its installed version and
 bundle identifier (theboringteam.boringnotch), then inspect its visible interface when UI tools
@@ -76,6 +85,10 @@ Image compression uses the separate ImageOptim app; STL Repair uses the document
 compatible Blender version. Reuse installed companions and install missing ones
 from their official sources only for features I select. Do not install Blender,
 ImageOptim, or a browser extension merely to prove the base app works.
+
+For media controls, start a harmless local track in the app I want to use and check Nodebay's title, progress, play/pause and source selection. In Settings > Media, inspect source issues and use Refresh Sources if necessary. Guide Automation permission for app-specific controls on this Mac. Do not say music is absent merely because a permission or helper has failed.
+
+For Spotify, QuickTime or identified Chrome EQ, explain that System Audio Recording permission must be granted separately on each Mac. Start local playback, enable EQ, and inspect its actual processing status. If requested, guide me through Screen & System Audio Recording in macOS Settings and then Retry or relaunch. Verify an audible change and bypass restoration; a moving curve alone is not an EQ test. Spotify Connect audio playing on another device is outside local EQ. Preserve volume and playback preferences after testing.
 
 Check the installed release before offering AI setup. Quick Chat is included in
 Nodebay 1.2.0 and later; older releases such as 1.1.0 do not include it.
