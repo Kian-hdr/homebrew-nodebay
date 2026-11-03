@@ -2,6 +2,10 @@
 
 Official Homebrew tap for [Nodebay](https://github.com/Kian-hdr/nodebay), the local-first utility bay in your Mac's notch.
 
+[![Download macOS DMG](https://img.shields.io/badge/Download%20macOS%20DMG-24292F?style=for-the-badge&logo=apple&logoColor=white)](https://github.com/Kian-hdr/nodebay/releases/download/nodebay-v1.2.2/Nodebay-1.2.2-arm64.dmg)
+
+[Download macOS DMG](https://github.com/Kian-hdr/nodebay/releases/download/nodebay-v1.2.2/Nodebay-1.2.2-arm64.dmg) · [Project README](https://github.com/Kian-hdr/nodebay)
+
 ## Set up with your AI agent
 
 **[Copy the setup prompt into your agent's chat](SETUP-PROMPT.md).** No placeholders
