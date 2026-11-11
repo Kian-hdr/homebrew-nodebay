@@ -1,10 +1,8 @@
-# Homebrew Nodebay
+<p align="center"><strong>Homebrew Nodebay</strong></p>
 
 Official Homebrew tap for [Nodebay](https://github.com/Kian-hdr/nodebay), the local-first utility bay in your Mac's notch.
 
-## Download
-
-<p>
+<p align="center">
 <a href="https://github.com/Kian-hdr/nodebay/releases/download/nodebay-v1.2.2/Nodebay-1.2.2-arm64.dmg"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="Download for macOS"></a>
 </p>
 
