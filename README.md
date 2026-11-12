@@ -2,7 +2,13 @@
 
 Official Homebrew tap for [Nodebay](https://github.com/Kian-hdr/nodebay), the local-first utility bay in your Mac's notch.
 
-<p align="center"><img src="https://raw.githubusercontent.com/Kian-hdr/nodebay/7a476d20b2377b87f3b5a7458b8d19385897ab59/Design/NodebayIcon/Nodebay-AppIcon-1024.png" width="96" alt="Nodebay app icon"></p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Kian-hdr/nodebay/b5e64f5cc20711b4830fb03ab220b7f37970980b/Design/NodebayIcon/Nodebay%20Exports/Nodebay-iOS-Dark-1024x1024%401x.png">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Kian-hdr/nodebay/b5e64f5cc20711b4830fb03ab220b7f37970980b/Design/NodebayIcon/Nodebay%20Exports/Nodebay-iOS-Default-1024x1024%401x.png">
+    <img src="https://raw.githubusercontent.com/Kian-hdr/nodebay/b5e64f5cc20711b4830fb03ab220b7f37970980b/Design/NodebayIcon/Nodebay%20Exports/Nodebay-iOS-Default-1024x1024%401x.png" width="96" alt="Nodebay app icon">
+  </picture>
+</p>
 
 <p align="center">
 <a href="https://github.com/Kian-hdr/nodebay/releases/download/nodebay-v1.2.2/Nodebay-1.2.2-arm64.dmg"><img src="docs/assets/downloads/download_1.svg" width="240" height="48" alt="Download for macOS"></a>
